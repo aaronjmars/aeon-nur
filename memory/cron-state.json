@@ -2,5 +2,14 @@
   "heartbeat": {
     "last_dispatch": "2026-07-02T21:23:42Z",
     "last_status": "dispatched"
+  },
+  "digest": {
+    "last_dispatch": "2026-08-19T15:43:00Z",
+    "last_status": "success",
+    "total_runs": 4,
+    "total_successes": 3,
+    "total_failures": 1,
+    "success_rate": 0.75,
+    "consecutive_failures": 0
   }
 }
