@@ -11,6 +11,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-08-19 | default (web) | Apple 0-click patch, Claude protein design, PA AI data-center order |
 
 ## Skills Built
 | Skill | Date | Notes |
