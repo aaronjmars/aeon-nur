@@ -167,6 +167,11 @@ reactive:
   # autoresearch:
   #   trigger:
   #     - { on: skill-health, when: "last_status = success" }
+  # PROVETEST (chassis integration proof) - fire heartbeat after digest succeeds;
+  # the handler receives var=digest (proves reactive eval + source-var passing).
+  heartbeat:
+    trigger:
+      - { on: digest, when: "last_status = success" }
 
 # Chains — multi-step skill pipelines with parallel execution and output passing.
 # Steps run sequentially; use parallel: [...] for concurrent execution within a step.
@@ -194,6 +199,15 @@ chains:
   #   steps:
   #     - parallel: [token-movers, hn-digest, issue-triage, github-trending]
   #     - skill: routine, consume: [token-movers, hn-digest, issue-triage, github-trending]
+  # PROVETEST (chassis integration proof) - digest is scored, then the two branches
+  # route on that score: skill-health runs (score >= 1), article is skipped (score > 99).
+  provetest:
+    schedule: "workflow_dispatch"
+    on_error: continue
+    steps:
+      - { skill: digest }
+      - { skill: skill-health, consume: [digest], when: "score >= 1" }
+      - { skill: article, consume: [digest], when: "score > 99" }
 
 # Default model for all skills. Override per-run via workflow_dispatch.
 # Options: claude-sonnet-5, claude-opus-4-8, claude-haiku-4-5-20251001
