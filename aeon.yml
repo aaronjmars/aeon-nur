@@ -171,7 +171,7 @@ reactive:
   # the handler receives var=digest (proves reactive eval + source-var passing).
   heartbeat:
     trigger:
-      - { on: digest, when: "last_status = success" }
+      - { on: "digest", when: "last_status = success" }
 
 # Chains — multi-step skill pipelines with parallel execution and output passing.
 # Steps run sequentially; use parallel: [...] for concurrent execution within a step.
