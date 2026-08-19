@@ -205,7 +205,6 @@ chains:
     schedule: "workflow_dispatch"
     on_error: continue
     steps:
-      - { skill: digest }
       - { skill: skill-health, consume: [digest], when: "score >= 1" }
       - { skill: article, consume: [digest], when: "score > 99" }
 
