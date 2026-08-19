@@ -1,0 +1,181 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "Digest — 2026-08-19"
+      },
+      "children": [
+        "tldr",
+        "story_1",
+        "sep_1",
+        "story_2",
+        "sep_2",
+        "story_3",
+        "sep_3",
+        "story_4",
+        "sep_4",
+        "story_5"
+      ]
+    },
+    "tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Apple patches a zero-click image bug, Claude beats human hit-rates on protein design, Pennsylvania makes AI data centers pay their own grid costs, and capital keeps moving into H200 chips and Bitcoin treasuries.",
+        "variant": "lead"
+      }
+    },
+    "story_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_1_link",
+        "story_1_details"
+      ]
+    },
+    "story_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Apple patches a zero-click ImageIO code-execution bug",
+        "href": "https://www.forbes.com/sites/kateoflahertyuk/2026/08/19/ios-2661-and-ios-18710-update-now-warning-for-all-iphone-users/",
+        "source": "Forbes"
+      }
+    },
+    "story_1_details": {
+      "type": "Text",
+      "props": {
+        "text": "iOS 26.6.1, iPadOS 26.6.1, and macOS Tahoe 26.6.2 fix CVE-2026-65346, an ImageIO integer-overflow where just rendering a malicious image can trigger code execution — found by Meta's Red Team X. No known in-the-wild exploitation yet, but zero-click image bugs are prime spyware material — update today."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_2_link",
+        "story_2_details"
+      ]
+    },
+    "story_2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Claude autonomously designed 354 working protein binders",
+        "href": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+        "source": "Anthropic"
+      }
+    },
+    "story_2_details": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic had Claude Opus 4.8 run existing protein-design and co-folding models end-to-end across 15 drug targets (PD-L1, EGFR, TNFα, others), generating 1,320 candidates. Adaptyv Bio and Twist Bioscience lab-tested them: 354 bound (22.6–35.1% hit rate vs. the field's usual 10–15%). Lab-verified, not a benchmark claim — a real jump in de novo drug-discovery throughput."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_3_link",
+        "story_3_details"
+      ]
+    },
+    "story_3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pennsylvania signs the country's strictest AI data-center rules",
+        "href": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen",
+        "source": "Pennsylvania Governor's Office"
+      }
+    },
+    "story_3_details": {
+      "type": "Text",
+      "props": {
+        "text": "Shapiro's order pulls AI data centers from Fast Track permitting, bans data-center NDAs, requires local approval before construction, and makes developers over 25MW cover their own grid-upgrade costs plus clean power. 100+ PA data-center proposals were in talks — this resets their economics and could become a template other states copy."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_4_link",
+        "story_4_details"
+      ]
+    },
+    "story_4_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Nvidia's H200 chips are flowing into China again",
+        "href": "https://www.benzinga.com/markets/tech/26/08/61293582/nvidias-h200-chips-are-flowing-into-china-again-bytedance-tencent-get-around-10000-each-report-says",
+        "source": "Benzinga"
+      }
+    },
+    "story_4_details": {
+      "type": "Text",
+      "props": {
+        "text": "ByteDance and Tencent have each reportedly received ~10,000 H200 units in recent weeks under the revised US license-review policy — sales stay capped at 50% of volume sold to US customers, plus certification. Reopens a multi-billion-dollar China channel for Nvidia, though still short of pre-restriction access."
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_5_link",
+        "story_5_details"
+      ]
+    },
+    "story_5_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Metaplanet commits 2,100 BTC to launch a US Bitcoin treasury platform",
+        "href": "https://www.globenewswire.com/news-release/2026/08/18/3346825/0/en/metaplanet-to-invest-2-100-bitcoin-in-super-league-to-launch-u-s-bitcoin-treasury-platform-superplanet.html",
+        "source": "Globe Newswire"
+      }
+    },
+    "story_5_details": {
+      "type": "Text",
+      "props": {
+        "text": "Metaplanet will contribute 2,100 BTC (~$132M) plus $2.5M cash into Nasdaq-listed Super League Enterprise, taking a 95.7% stake and renaming it Superplanet (ticker SUPA); closing expected Q4 2026. Metaplanet already holds ~43,000 BTC. A second US Bitcoin-treasury vehicle for Metaplanet — watch SUPA/SLE around the Q4 close."
+      }
+    }
+  }
+}
